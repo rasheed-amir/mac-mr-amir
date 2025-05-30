@@ -1,0 +1,127 @@
+# HOW TO UPDATE CONTACT LINKS
+# MAC Education Center Website
+
+This file explains how to change the WhatsApp, Facebook, and Google Maps links on your website.
+
+================================================================================
+LOCATION OF CONTACT SETTINGS
+================================================================================
+
+All contact links are stored in ONE place: the "script.js" file
+
+1. Open the file: script.js
+2. Look at the very top of the file (lines 1-10)
+3. Find the "config" section that looks like this:
+
+const config = {
+  whatsappLink: "https://wa.me/201009604044?text=...",
+  facebookLink: "https://facebook.com/MACMansoura",
+  mapsLink: "https://maps.app.goo.gl/WxgRMgnqVPjZ35DdA",
+  educatorName: "Mr. Amir MoheyEldin",
+  educatorTitle: "Experienced English Educator",
+  educatorSpecialty: "SAT, ACT, & EST Prep Specialist",
+}
+
+================================================================================
+HOW TO CHANGE EACH LINK
+================================================================================
+
+WHATSAPP LINK:
+--------------
+Current: whatsappLink: "https://wa.me/201009604044?text=Hi%20Mr%20Amir%2C%20I%E2%80%99d%20like%20to%20schedule%20a%20class%20with%20you.%20Could%20you%20please%20let%20me%20know%20your%20available%20days%20and%20times%3F"
+
+To change:
+1. Replace "201009604044" with your WhatsApp number (no + sign, include country code)
+2. To change the pre-filled message, replace everything after "?text="
+3. Use an online "URL encoder" to convert your message (spaces become %20, etc.)
+
+Example: "Hello, I want to book a class" becomes "Hello%2C%20I%20want%20to%20book%20a%20class"
+
+FACEBOOK LINK:
+--------------
+Current: facebookLink: "https://facebook.com/MACMansoura"
+
+To change:
+1. Replace "MACMansoura" with your Facebook page username
+2. Or use the full Facebook URL if you have one
+
+GOOGLE MAPS LINK:
+-----------------
+Current: mapsLink: "https://maps.app.goo.gl/WxgRMgnqVPjZ35DdA"
+
+To change:
+1. Go to Google Maps
+2. Search for your location
+3. Click "Share" button
+4. Copy the link
+5. Replace the entire URL
+
+================================================================================
+HOW TO CHANGE EDUCATOR INFORMATION
+================================================================================
+
+EDUCATOR NAME:
+--------------
+Current: educatorName: "Mr. Amir MoheyEldin"
+Change: Replace the text between the quotes
+
+EDUCATOR TITLE:
+---------------
+Current: educatorTitle: "Experienced English Educator"
+Change: Replace the text between the quotes
+
+EDUCATOR SPECIALTY:
+-------------------
+Current: educatorSpecialty: "SAT, ACT, & EST Prep Specialist"
+Change: Replace the text between the quotes
+
+================================================================================
+STEP-BY-STEP INSTRUCTIONS
+================================================================================
+
+1. OPEN THE FILE:
+   - Open "script.js" in any text editor (Notepad, VS Code, etc.)
+
+2. FIND THE CONFIG SECTION:
+   - Look at the top of the file
+   - Find the lines that start with "const config = {"
+
+3. MAKE YOUR CHANGES:
+   - Change only the text between the quotes
+   - Keep the quotes and commas exactly as they are
+   - Don't change anything else
+
+4. SAVE THE FILE:
+   - Save the script.js file
+   - Keep the same filename
+
+5. TEST YOUR WEBSITE:
+   - Open index.html in your browser
+   - Click each contact button to make sure they work
+   - Check that the educator information displays correctly
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+- Only edit the script.js file - don't change index.html or styles.css
+- Keep all quotes, commas, and brackets exactly as they are
+- Test your links after making changes
+- Make a backup copy of script.js before making changes
+- If something breaks, restore from your backup
+
+================================================================================
+NEED HELP?
+================================================================================
+
+If you need help with URL encoding for WhatsApp messages:
+- Search online for "URL encoder tool"
+- Paste your message and it will convert it automatically
+
+Common URL encodings:
+- Space = %20
+- Comma = %2C
+- Question mark = %3F
+- Apostrophe = %E2%80%99
+
+================================================================================
